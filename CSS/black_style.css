@@ -1,0 +1,117 @@
+/*
+ rgb(85, 163, 252) light blue
+rgb(21, 11, 77) blue
+ */
+
+body {
+    background-image: url("../img/white_background2.jpg");
+    background-attachment: fixed;
+}
+
+#Main {
+    background-color: rgba(24, 24, 24, 0.842);
+}
+
+#logotype {
+    color: whitesmoke;
+}
+
+
+/*
+#logotype {
+    color: rgb(85, 163, 252);
+    background-color: white;
+}
+*/
+
+#nav_bar {
+    background-color: rgb(85, 163, 252);
+}
+
+#nav_bar ul a li {
+    color: white;
+}
+
+#nav_bar ul li:hover {
+    background-color: #333;
+    color: white;
+}
+
+.article h2 {
+    color: rgb(85, 163, 252);
+}
+
+.article .date {
+    color: rgb(38, 134, 245);
+}
+
+.article p {
+    color: whitesmoke;
+}
+
+.article .see_more button {
+    background-color: rgb(85, 163, 252);
+    color: white;
+}
+
+.article .see_more button:hover {
+    background-color: rgb(21, 11, 77);
+}
+
+#side_bar {
+    color: whitesmoke;
+}
+
+#side_bar #side1 {
+    background-color: whitesmoke;
+}
+
+#side_bar #side1 h4 {
+    color: #333;
+}
+
+#side_bar #side1 form input,
+#side_bar #side1 form label {
+    color: #333;
+}
+
+#side_bar #side1 form input {
+    background-color: rgba(51, 51, 51, 0.808);
+    color: rgb(85, 163, 252);
+}
+
+#side_bar #side1 form input[type="submit"] {
+    background-color: rgb(85, 163, 252);
+    color: white;
+}
+
+#side_bar #side1 form input[type="submit"]:hover {
+    background-color: rgb(21, 11, 77);
+}
+
+#side_bar #side1 span a {
+    color: #333;
+}
+
+#side_bar #side2 h4 {
+    color: rgb(85, 163, 252);
+}
+
+footer {
+    color: white;
+    background-color: rgba(51, 51, 51, 0.699);
+}
+
+footer #theme_button {
+    background-color: rgb(85, 163, 252);
+    color: whitesmoke;
+    border-style: none;
+    transition: 300ms;
+    height: 30px;
+    width: 120px;
+}
+
+footer #theme_button:hover {
+    background-color: rgb(17, 59, 107);
+    color: white;
+}

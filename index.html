@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="jQuery-min/jquery-3.5.1.min.js"></script>
+    <!-- Estilo principal-->
+    <link rel="stylesheet" href="CSS/Main.css">
+    <!--Estilo blanco-->
+    <link id="theme" rel="stylesheet" href="CSS/white_style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
+    <!-- Script principal-->
+    <script src="JavaScript/Main.js"></script>
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1000,
+                responsive: true,
+                pager: true
+            });
+        });
+    </script>
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/locale/es.js"></script>
+    <!--Title-->
+    <title>Proyecto</title>
+</head>
+
+<!-- Body -->
+
+<body>
+    <div id="social_media">
+        <div id="b_facebook">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div id="b_whatsapp">
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div id="b_twitter">
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <div id="b_instagram">
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <section id="Main">
+        <!--Header of the page-->
+        <header>
+            <div id="logotype">
+                <h1>My first project </h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="nav_bar">
+                <ul>
+                    <a href="#">
+                        <li> Principal</li>
+                    </a>
+                    <a href="#">
+                        <li> Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>About Me</li>
+                    </a>
+                    <a href="#">
+                        <li> Contact</li>
+                    </a>
+                    <a href="#">
+                        <li> Clock </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <!--Slider of images-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/img1.jpeg" title="Vapor"></div>
+                <div><img src="img/img2.jpeg" title="Drops"></div>
+                <div><img src="img/img6.jpg" title="City"></div>
+            </div>
+        </div>
+
+        <!--Content-->
+        <section id="content">
+
+            <div id="articles">
+                <!--Article-->
+
+            </div>
+            <!--Sidebar with options-->
+            <aside id="side_bar">
+                <div id="side1_login">
+                    <h4><span> Login </span></h4>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="l_name">
+                        <label for="password">Password</label>
+                        <input type="password" id="l_password">
+                        <br>
+                        <input type="submit" id="l_enter" value="Login">
+                    </form>
+                    <br>
+                    <span><a href="#">Create account</a></span>
+                </div>
+                <div id="side2">
+                    <h4>YSCT</h4>
+                    <img src="img/img3.jpeg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia doloremque praesentium necessitatibus et, numquam quam a autem obcaecati quod cumque temporibus? Vitae sapiente rerum tempore dolor quis. Omnis, explicabo.</p>
+                </div>
+            </aside>
+            <!--Clearfix-->
+            <div class="clearfix"></div>
+        </section>
+    </section>
+
+    <!--Footer of the page-->
+    <footer>
+        <span>  Footer of webpage © </span>
+
+        <input type="button" id="theme_button" value="White Theme"></input>
+    </footer>
+
+</body>
+
+</html>
