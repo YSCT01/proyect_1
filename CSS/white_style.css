@@ -63,35 +63,35 @@ body {
     color: #333;
 }
 
-#side_bar #side1 {
+#side_bar #side1_login {
     background-color: #333;
 }
 
-#side_bar #side1 h4 {
+#side_bar #side1_login h4 {
     color: white;
 }
 
-#side_bar #side1 form input,
-#side_bar #side1 form label {
+#side_bar #side1_login form input,
+#side_bar #side1_login form label {
     color: white;
 }
 
-#side_bar #side1 form input {
+#side_bar #side1_login form input {
     background-color: rgba(255, 255, 255, 0.712);
     color: rgb(17, 59, 107);
 }
 
-#side_bar #side1 form input[type="submit"] {
+#side_bar #side1_login form input[type="submit"] {
     background-color: rgb(21, 11, 77);
     color: white;
 }
 
-#side_bar #side1 form input[type="submit"]:hover {
+#side_bar #side1_login form input[type="submit"]:hover {
     background-color: rgb(85, 163, 252);
     color: white;
 }
 
-#side_bar #side1 span a {
+#side_bar #side1_login span a {
     color: white;
 }
 
