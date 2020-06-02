@@ -224,6 +224,7 @@ footer input {
 .bx-wrapper,
 .bx-viewport {
     height: 350px !important;
+    max-width: 20000px !important;
 }
 
 
@@ -269,3 +270,38 @@ footer input {
 
 
 /*----------------------------------------------------------*/
+
+@media all and (max-width: 900px) {
+    #articles {
+        width: 65%;
+        margin-right: 10%;
+    }
+    #side_bar {
+        width: 22%;
+    }
+    #side_bar #side1 h4 {
+        font-size: 16px;
+    }
+    #side_bar #side1 label,
+    #side_bar #side1 form input {
+        font-size: 14;
+    }
+    #side_bar #side1 form #l_enter {
+        margin-left: 0;
+    }
+}
+
+
+/*----------------------------------------------------------*/
+
+@media all and (max-width: 700px) {
+    #social_media {
+        display: none;
+        width: 0%;
+    }
+    #Main {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

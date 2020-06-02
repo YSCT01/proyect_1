@@ -55,8 +55,15 @@ $(document).ready(function() {
     });
 
     //almacenate data in the local storage
-    $("#side1_login").submit(function() {
-
+    $("#side1").submit(function() {
+        var user_name = $("#l_name").val();
+        console.log(user_name);
+        localStorage.setItem("username", user_name);
+        var user_pass = $("#l_password").val();
+        localStorage.setItem("password", user_pass)
     });
 
+    var username = localStorage.getItem("username");
+    var password = localStorage.getItem("password");
+    console.log(username);
 });
