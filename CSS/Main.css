@@ -271,7 +271,7 @@ footer input {
 
 /*----------------------------------------------------------*/
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
     #articles {
         width: 65%;
         margin-right: 10%;
@@ -294,7 +294,7 @@ footer input {
 
 /*----------------------------------------------------------*/
 
-@media all and (max-width: 700px) {
+@media (max-width: 700px) {
     #social_media {
         display: none;
         width: 0%;
@@ -303,5 +303,32 @@ footer input {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+}
+
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 500px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    #side_bar {
+        width: 100%;
+        float: none;
+        height: fit-content;
+    }
+    #articles {
+        float: none;
+        width: 80%;
+    }
+    #side_bar #side2 img,
+    #side_bar #side2 p {
+        display: none;
+    }
+    .bx-wrapper,
+    .bx-viewport {
+        height: 250px !important;
     }
 }
