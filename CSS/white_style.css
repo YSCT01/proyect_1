@@ -96,7 +96,20 @@ body {
 }
 
 #side_bar #side2 h4 {
-    color: rgb(17, 59, 107);
+    color: whitesmoke;
+}
+
+#side_bar #side2 #logged {
+    background-color: rgb(21, 11, 77);
+    border-radius: 3px;
+}
+
+#side_bar #side2 #username_l {
+    color: red;
+}
+
+#side_bar #side2 #logout {
+    color: rgb(85, 163, 252);
 }
 
 footer {

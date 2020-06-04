@@ -187,6 +187,23 @@ body {
     margin-bottom: 20px;
 }
 
+#side_bar #side2 #logged {
+    padding: 5px;
+    height: auto;
+    width: auto;
+    background-color: rgb(21, 11, 77);
+    border-radius: 3px;
+}
+
+#side_bar #side2 #username_l {
+    color: red;
+}
+
+#side_bar #side2 #logout {
+    text-decoration: none;
+    color: rgb(85, 163, 252);
+}
+
 #side_bar #side2 img {
     width: 100%;
     margin-bottom: 20px;
@@ -223,7 +240,7 @@ footer input {
 
 .bx-wrapper,
 .bx-viewport {
-    height: 350px !important;
+    height: 400px !important;
     max-width: 20000px !important;
 }
 
@@ -289,6 +306,13 @@ footer input {
     #side_bar #side1 form #l_enter {
         margin-left: 0;
     }
+    .bx-wrapper,
+    .bx-viewport {
+        height: 300px !important;
+    }
+    footer {
+        width: 77%;
+    }
 }
 
 
@@ -303,6 +327,10 @@ footer input {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .bx-wrapper,
+    .bx-viewport {
+        height: 230px !important;
     }
 }
 
@@ -329,6 +357,6 @@ footer input {
     }
     .bx-wrapper,
     .bx-viewport {
-        height: 250px !important;
+        height: 190px !important;
     }
 }

@@ -38,32 +38,43 @@ $(document).ready(function() {
     });
 
     //Theme color
-    var t_color = "black";
+    var t_color = "white";
     var theme_button = $("#theme_button");
     theme_button.click(function() {
 
-
-        if (t_color == "black") {
-            theme_button.text("Black Theme");
-            $("#theme").attr("href", "CSS/white_style.css");
-            t_color = "white";
-        } else if (t_color == "white") {
-            theme_button.text("White Theme");
+        if (t_color == "white") {
+            theme_button.attr("value", "White Theme");
             $("#theme").attr("href", "CSS/black_style.css");
             t_color = "black";
+        } else if (t_color == "black") {
+            theme_button.attr("value", "Black Theme");
+            $("#theme").attr("href", "CSS/white_style.css");
+            t_color = "white";
         }
     });
 
     //almacenate data in the local storage
     $("#side1").submit(function() {
         var user_name = $("#l_name").val();
-        console.log(user_name);
         localStorage.setItem("username", user_name);
         var user_pass = $("#l_password").val();
-        localStorage.setItem("password", user_pass)
+        localStorage.setItem("password", user_pass);
+        location.reload();
     });
 
-    var username = localStorage.getItem("username");
-    var password = localStorage.getItem("password");
-    console.log(username);
+    var username_l = localStorage.getItem("username");
+    var password_l = localStorage.getItem("password");
+
+    if (username_l != null && username_l != undefined) {
+        var name_login = $("#side2 h4");
+        name_login.html("<div id='logged'>Welcome  <br>" + "<span id = 'username_l'> " + username_l + "</span> <br> <br> <a href='#' id='logout'> Log out </a> </div>");
+        $("#side1").hide();
+        $("#logged #logout").click(function() {
+            localStorage.clear();
+            location.reload();
+        });
+    }
+
+
+
 });
