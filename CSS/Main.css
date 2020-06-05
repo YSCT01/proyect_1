@@ -372,11 +372,10 @@ rgb(17, 59, 107); blue
             margin-top: 8px;
         }
         #nav_bar {
-            float: left;
             display: none;
         }
         #nav_bar ul a li {
-            width: 90%;
+            width: 100%;
         }
         #side_bar {
             width: 100%;

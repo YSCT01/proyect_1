@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-
-
+    //------------------------------------------------------------------------------------------------------------------------------------------
     //Articles
     var js_articles = [{
             title: "Title 1",
@@ -37,6 +36,8 @@ $(document).ready(function() {
         $("#articles").append(p_article);
     });
 
+
+    //------------------------------------------------------------------------------------------------------------------------------------------
     //Theme color
     var t_color = "white";
     var theme_button = $("#theme_button");
@@ -53,6 +54,8 @@ $(document).ready(function() {
         }
     });
 
+
+    //------------------------------------------------------------------------------------------------------------------------------------------
     //almacenate data in the local storage
     $("#side1").submit(function() {
         var user_name = $("#l_name").val();
@@ -76,5 +79,19 @@ $(document).ready(function() {
     }
 
 
+    //------------------------------------------------------------------------------------------------------------------------------------------
+    //Toggle function 
+    var menu_toggle = $("#menu_toogle");
+    var nav_menu_action = $("#nav_bar");
+    var showing = false;
+    menu_toggle.click(function() {
+        if (showing) {
+            nav_menu_action.slideUp();
+            showing = false;
+        } else {
+            nav_menu_action.slideDown();
+            showing = true;
+        }
+    });
 
 });
