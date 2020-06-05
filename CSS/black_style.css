@@ -37,6 +37,10 @@ header {
     color: white;
 }
 
+#nav_bar ul .active_nav {
+    background-color: rgb(21, 11, 77);
+}
+
 .article h2 {
     color: rgb(85, 163, 252);
 }
