@@ -86,9 +86,11 @@ $(document).ready(function() {
     var showing = false;
     menu_toggle.click(function() {
         if (showing) {
+            menu_toggle.html("<i class='fas fa-ellipsis-v'></i>")
             nav_menu_action.slideUp();
             showing = false;
         } else {
+            menu_toggle.html("<i class='fas fa-times-circle'></i>")
             nav_menu_action.slideDown();
             showing = true;
         }

@@ -375,7 +375,7 @@ rgb(17, 59, 107); blue
             display: none;
         }
         #nav_bar ul a li {
-            width: 100%;
+            width: 80%;
         }
         #side_bar {
             width: 100%;
