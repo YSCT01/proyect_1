@@ -134,3 +134,29 @@ footer #theme_button:hover {
     background-color: rgb(85, 163, 252);
     color: white;
 }
+
+#box h2 {
+    color: rgb(21, 11, 77);
+}
+
+#accordion h3 {
+    border-style: none;
+    border-radius: 3px;
+    background-color: rgb(85, 163, 252);
+    transition: 400ms;
+    color: whitesmoke
+}
+
+#accordion div {
+    background-color: #333;
+}
+
+#accordion p {
+    color: white;
+    text-align: justify;
+}
+
+#accordion h3:hover {
+    background-color: whitesmoke;
+    color: #333;
+}

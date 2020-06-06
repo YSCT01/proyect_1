@@ -85,12 +85,21 @@ rgb(17, 59, 107); blue
     }
     /*----------------------------------------------------------*/
     
-    #articles {
+    #articles,
+    #accordion {
         width: 70%;
         float: left;
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 20px;
         margin-right: 5%;
+    }
+    
+    #box h2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #accordion {
+        margin-top: 5px;
     }
     
     .article {

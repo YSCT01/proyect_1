@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jQuery -->
     <script src="jQuery-min/jquery-3.5.1.min.js"></script>
+    <!-- jQuery UI-->
+    <script src="jQuery-UI/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jQuery-UI/jquery-ui.min.css">
+    <link rel="stylesheet" href="jQuery-UI/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jQuery-UI/jquery-ui.theme.min.css">
     <!-- Estilo principal-->
     <link rel="stylesheet" href="CSS/Main.css">
     <!--Estilo blanco-->
@@ -14,13 +19,8 @@
     <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
     <!-- Script principal-->
     <script src="JavaScript/Main.js"></script>
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/locale/es.js"></script>
+    <!-- Accordion of the content about-->
+    <script src="JavaScript/accordion_about.js"></script>
     <!--Title-->
     <title>Proyecto</title>
 </head>
@@ -50,7 +50,6 @@
         </div>
     </div>
 
-
     <section id="Main">
         <!--Header of the page-->
 
@@ -79,8 +78,6 @@
         </header>
         <!--Content-->
         <section id="content">
-
-
             <!--Sidebar with options-->
             <aside id="side_bar">
                 <div id="side1">
@@ -102,6 +99,30 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia doloremque praesentium necessitatibus et, numquam quam a autem obcaecati quod cumque temporibus? Vitae sapiente rerum tempore dolor quis. Omnis, explicabo.</p>
                 </div>
             </aside>
+            <div id="box">
+                <!-- Accordion -->
+                <h2>Yared Del Toro</h2>
+                <div id="accordion">
+                    <h3>About me</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae enim, tempora, atque saepe consequatur modi obcaecati rerum quae omnis quam voluptatibus beatae officia non tenetur laboriosam cum illum fugit quis.
+                        </p>
+                    </div>
+                    <h3>Experience</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae enim, tempora, atque saepe consequatur modi obcaecati rerum quae omnis quam voluptatibus beatae officia non tenetur laboriosam cum illum fugit quis.
+                        </p>
+                    </div>
+                    <h3>Services</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae enim, tempora, atque saepe consequatur modi obcaecati rerum quae omnis quam voluptatibus beatae officia non tenetur laboriosam cum illum fugit quis.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!--Clearfix-->
             <div class="clearfix"></div>
         </section>
