@@ -10,34 +10,21 @@
     <link rel="stylesheet" href="CSS/Main.css">
     <!--Estilo blanco-->
     <link id="theme" rel="stylesheet" href="CSS/white_style.css">
+    <!-- Clock style -->
+    <link rel="stylesheet" href="CSS/clock.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
     <!-- Script principal-->
     <script src="JavaScript/Main.js"></script>
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.bxslider').bxSlider({
-                mode: 'fade',
-                captions: true,
-                slideWidth: 1000,
-                responsive: true,
-                pager: true
-            });
-        });
-    </script>
-    <!-- Articles of the page-->
-    <script src="JavaScript/articles_main.js"></script>
     <!-- Moment JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/locale/es.js"></script>
+    <!-- Clock function -->
+    <script src="JavaScript/clock.js"></script>
     <!--Title-->
     <title>Proyecto</title>
 </head>
-
 <!-- Body -->
 
 <body>
@@ -90,19 +77,8 @@
             </nav>
             <div class="clearfix"></div>
         </header>
-        <!--Slider of images-->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/img1.jpeg" title="Vapor"></div>
-                <div><img src="img/img2.jpeg" title="Drops"></div>
-                <div><img src="img/img6.jpg" title="City" style="width: 100%;"></div>
-            </div>
-        </div>
-
         <!--Content-->
         <section id="content">
-
-
             <!--Sidebar with options-->
             <aside id="side_bar">
                 <div id="side1">
@@ -124,10 +100,14 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia doloremque praesentium necessitatibus et, numquam quam a autem obcaecati quod cumque temporibus? Vitae sapiente rerum tempore dolor quis. Omnis, explicabo.</p>
                 </div>
             </aside>
+            <!-- Clock -->
 
-            <div id="articles">
-                <!--Article-->
+            <div id="square">
+                <div id="circle">
+                    <div id="clock">
 
+                    </div>
+                </div>
             </div>
             <!--Clearfix-->
             <div class="clearfix"></div>

@@ -160,3 +160,11 @@ footer #theme_button:hover {
     background-color: whitesmoke;
     color: #333;
 }
+
+#circle {
+    border: 5px solid rgb(21, 11, 77);
+}
+
+#circle #clock {
+    color: #333;
+}
