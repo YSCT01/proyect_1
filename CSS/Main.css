@@ -173,7 +173,8 @@ rgb(17, 59, 107); blue
     }
     
     #side_bar #side1 form input {
-        font-size: auto;
+        font-size: 15px;
+        padding: 3px;
     }
     
     #side_bar #side1 form input[type="submit"] {

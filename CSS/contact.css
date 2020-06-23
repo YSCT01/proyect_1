@@ -1,0 +1,50 @@
+    #contact_form {
+        margin-top: 10px;
+        float: left;
+        width: 70%;
+        padding-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #contact_form h2 {
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    #contact_form form {
+        padding-left: 8px;
+        padding-top: 5px;
+    }
+    
+    #contact_form input {
+        margin-bottom: 15px;
+        width: 80%;
+        margin-top: 3px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    #contact_form label {
+        font-size: 18px;
+    }
+    
+    #contact_form #female_l,
+    #contact_form #male_l,
+    #contact_form #other_l {
+        width: auto;
+    }
+    
+    #contact_form #l_ma,
+    #contact_form #l_fe,
+    #contact_form #l_ot {
+        font-size: 16px;
+    }
+    
+    #contact_form input[type='submit'] {
+        padding: 5px;
+        font-size: 17px;
+        width: auto;
+        cursor: pointer;
+        margin-top: 5px;
+        transition: 400ms;
+    }

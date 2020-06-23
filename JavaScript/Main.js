@@ -1,10 +1,26 @@
 $(document).ready(function() {
     //------------------------------------------------------------------------------------------------------------------------------------------
+    //Theme
+
+    var theme = localStorage.getItem("theme_color");
+    if (theme == "black") {
+        $("#theme_button").attr("value", "White Theme");
+        $("#theme").attr("href", "CSS/black_style.css");
+    } else if (theme == "white") {
+        $("#theme_button").attr("value", "Black Theme");
+        $("#theme").attr("href", "CSS/white_style.css");
+    }
+
+    //--------------------------------------------------
+    var t_color;
     //Theme color
-    var t_color = "white";
+    if (localStorage.getItem("theme_color") == undefined || localStorage.getItem("theme_color") == null) {
+        t_color = "white";
+    } else {
+        t_color = theme;
+    }
     var theme_button = $("#theme_button");
     theme_button.click(function() {
-
         if (t_color == "white") {
             theme_button.attr("value", "White Theme");
             $("#theme").attr("href", "CSS/black_style.css");
@@ -14,6 +30,7 @@ $(document).ready(function() {
             $("#theme").attr("href", "CSS/white_style.css");
             t_color = "white";
         }
+        localStorage.setItem("theme_color", t_color);
     });
 
 
