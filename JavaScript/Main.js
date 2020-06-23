@@ -52,7 +52,8 @@ $(document).ready(function() {
         name_login.html("<div id='logged'>Welcome  <br>" + "<span id = 'username_l'> " + username_l + "</span> <br> <br> <a href='#' id='logout'> Log out </a> </div>");
         $("#side1").hide();
         $("#logged #logout").click(function() {
-            localStorage.clear();
+            localStorage.removeItem("username");
+            localStorage.removeItem("password");
             location.reload();
         });
     }
