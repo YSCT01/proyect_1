@@ -202,3 +202,7 @@ footer #theme_button:hover {
 #contact_form input[type="submit"]:hover {
     background-color: rgb(85, 163, 252);
 }
+
+#contact_form .error {
+    background-color: rgba(253, 112, 112, 0.63);
+}

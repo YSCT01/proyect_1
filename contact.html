@@ -16,6 +16,8 @@
     <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
     <!-- Script principal-->
     <script src="JavaScript/Main.js"></script>
+    <!-- jQuery Form Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!--Title-->
     <title>Proyecto</title>
 </head>
@@ -100,14 +102,18 @@
             <!-- Contact form -->
             <div id="contact_form">
                 <h2>Contact us</h2>
-                <form action="">
-                    <label>Name</label>
+                <form action="" method="POST">
+                    <label>First Name</label>
                     <br>
-                    <input type="text" id="name_l">
+                    <input type="text" id="fname_l" data-validation="alphanumeric">
+                    <br>
+                    <label>Last Name</label>
+                    <br>
+                    <input type="text" id="lname_l" data-validation="alphanumeric">
                     <br>
                     <label>Gender</label>
                     <br>
-                    <input type="radio" id="male_l" name="gender">
+                    <input type="radio" id="male_l" name="gender" data-validation="required">
                     <label id="l_ma">Male</label>
                     <br>
                     <input type="radio" id="female_l" name="gender">
@@ -118,11 +124,11 @@
                     <br>
                     <label>Email</label>
                     <br>
-                    <input type="email" id="email_l">
+                    <input type="email" id="email_l" data-validation="email">
                     <br>
                     <label>Age</label>
                     <br>
-                    <input type="number" id="age">
+                    <input type="number" id="age" data-validation="number">
                     <br>
                     <input type="submit" id="submit" value="Submit">
 
@@ -140,7 +146,14 @@
 
         <input type="button" id="theme_button" value="Black Theme"></input>
     </footer>
+    <!-- Validation Script -->
+    <script>
+        $.validate({
+            lang: 'es',
 
+        });
+    </script>
 </body>
+
 
 </html>

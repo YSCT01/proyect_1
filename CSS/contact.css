@@ -48,3 +48,11 @@
         margin-top: 5px;
         transition: 400ms;
     }
+    
+    .form-error {
+        display: flex;
+        height: 35px;
+        width: 80%;
+        padding: 3px;
+        background-color: rgba(255, 0, 0, 0.712);
+    }

@@ -28,6 +28,9 @@ header {
     background-color: rgb(85, 163, 252);
 }
 
+
+/* NAvigation Bar */
+
 #nav_bar ul a li {
     color: white;
 }
@@ -61,6 +64,9 @@ header {
 .article .see_more button:hover {
     background-color: rgb(21, 11, 77);
 }
+
+
+/* SideBar */
 
 #side_bar {
     color: whitesmoke;
@@ -113,6 +119,9 @@ header {
 #side_bar #side2 #logout {
     color: rgb(21, 11, 77);
 }
+
+
+/* Footer */
 
 footer {
     color: white;
@@ -194,4 +203,8 @@ footer #theme_button:hover {
 
 #contact_form input[type="submit"]:hover {
     background-color: rgb(21, 11, 77);
+}
+
+#contact_form .error {
+    background-color: rgba(253, 112, 112, 0.63);
 }
